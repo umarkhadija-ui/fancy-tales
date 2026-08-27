@@ -1,0 +1,58 @@
+export const stories = [
+  {
+    id: 'shadow-of-truth',
+    title: 'In the Shadow of Truth',
+    author: 'Khadijah Umar',
+    genre: 'Mystery',
+    status: 'Featured',
+    description: 'Secrets have a way of finding the people who are least prepared to face them.',
+    chapters: 9,
+  },
+  {
+    id: 'dreamkeeper',
+    title: 'The Dreamkeeper',
+    author: 'Safiyyah Musa',
+    genre: 'Fantasy',
+    status: 'Popular',
+    description: 'An eighteen-year-old Dreamkeeper discovers that protecting dreams may cost more than she imagined.',
+    chapters: 12,
+  },
+  {
+    id: 'story-yet-untold',
+    title: 'A Story Yet Untold',
+    author: 'Fancy Tales',
+    genre: 'Romance',
+    status: 'New',
+    description: 'Some stories begin quietly, waiting for the right person to turn the first page.',
+    chapters: 4,
+  },
+  {
+    id: 'echoes-of-kano',
+    title: 'Echoes of Kano',
+    author: 'Fancy Tales',
+    genre: 'Drama',
+    status: 'New',
+    description: 'A young woman returns home and finds old memories hiding new truths.',
+    chapters: 6,
+  },
+  {
+    id: 'beyond-the-veil',
+    title: 'Beyond the Veil',
+    author: 'Fancy Tales',
+    genre: 'Adventure',
+    status: 'New',
+    description: 'A forbidden map leads three friends toward an adventure none of them expected.',
+    chapters: 8,
+  },
+  {
+    id: 'letters-never-sent',
+    title: 'Letters Never Sent',
+    author: 'Fancy Tales',
+    genre: 'Romance',
+    status: 'Popular',
+    description: 'Unsent words can carry a lifetime of feelings—and sometimes a second chance.',
+    chapters: 10,
+  },
+]
+
+export const genres = ['All', ...new Set(stories.map((story) => story.genre))]
